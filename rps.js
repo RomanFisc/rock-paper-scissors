@@ -6,8 +6,8 @@ function getComputerChoice() {
     return choices[randomIndex];
 }
 // Remove comments to test this function in the console
-const computerChoice = getComputerChoice();
-console.log("The computer chose: " + computerChoice);
+//const computerChoice = getComputerChoice();
+//console.log("The computer chose: " + computerChoice);
 // Returns rock, paper, scissors at random
 
 function gamePlay(playerSelection, computerSelection) {
