@@ -43,7 +43,14 @@ function gamePlay(playerSelection, computerSelection) {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        let playerChoice = prompt("Enter Rock, Paper, or Scissors"); //Allows for user input
+        let playerChoice = prompt("Enter Rock, Paper, or Scissors").toLowerCase(); //Allows for user input
+
+        if (playerChoice === null || playerChoice.trim() === "") {
+            console.log("No input received. Please enter Rock, Paper, or Scissors.");
+            i--; // Decrement the loop counter to repeat this iteration
+            continue;
+        }
+
         const computerChoice = getComputerChoice();                 
         console.log("Player's choice: " + playerChoice);
         console.log("Computer's choice: " + computerChoice);
