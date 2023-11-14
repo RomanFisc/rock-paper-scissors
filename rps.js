@@ -53,7 +53,7 @@ function gamePlay(playerSelection, computerSelection) {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        const playerChoice = 'Paper'; // You can modify this to take user input if needed
+        let playerChoice = prompt("Enter Rock, Paper, or Scissors"); // You can modify this to take user input if needed
         const computerChoice = getComputerChoice();
         console.log("Player's choice: " + playerChoice);
         console.log("Computer's choice: " + computerChoice);
@@ -63,3 +63,5 @@ function game() {
 
 game();
 //looping the game to play 5 times
+
+
