@@ -10,16 +10,6 @@ const computerChoice = getComputerChoice();
 console.log("The computer chose: " + computerChoice);
 // Returns rock, paper, scissors at random
 
-
-// Ask user to input rock, paper, or scissors
-// Generate computer choice 
-// If user submission equals computer choice 
-//      Return "Tie"
-// Else if user submission beats computer 
-//      Return "You win"
-// Else if user_submission loses to computer submission 
-//      Return "you lose"
-
 function gamePlay(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
 
@@ -53,8 +43,8 @@ function gamePlay(playerSelection, computerSelection) {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        let playerChoice = prompt("Enter Rock, Paper, or Scissors"); // You can modify this to take user input if needed
-        const computerChoice = getComputerChoice();
+        let playerChoice = prompt("Enter Rock, Paper, or Scissors"); //Allows for user input
+        const computerChoice = getComputerChoice();                 
         console.log("Player's choice: " + playerChoice);
         console.log("Computer's choice: " + computerChoice);
         console.log(gamePlay(playerChoice, computerChoice));
