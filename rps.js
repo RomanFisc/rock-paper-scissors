@@ -45,10 +45,21 @@ function gamePlay(playerSelection, computerSelection) {
 }
 
 //Testing out function gamePlay
-const playerChoice = 'Paper';
-const result = gamePlay(playerChoice, computerChoice);
-console.log(playerChoice);
-console.log(result);
+//const playerChoice = 'Paper';
+//const result = gamePlay(playerChoice, computerChoice);
+//console.log(playerChoice);
+//console.log(result);
 // Its working
 
+function game() {
+    for (let i = 0; i < 5; i++) {
+        const playerChoice = 'Paper'; // You can modify this to take user input if needed
+        const computerChoice = getComputerChoice();
+        console.log("Player's choice: " + playerChoice);
+        console.log("Computer's choice: " + computerChoice);
+        console.log(gamePlay(playerChoice, computerChoice));
+    }
+}
 
+game();
+//looping the game to play 5 times
